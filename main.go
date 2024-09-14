@@ -26,7 +26,7 @@ func main() {
 	c := cron.New(cron.WithLocation(time.UTC))
 
 	//18:00 MSK time, 15:00 UTC
-	_, err = c.AddFunc("* 15 * * 6", func() {
+	_, err = c.AddFunc("* 15 * * 5", func() {
 
 		postBody, _ := json.Marshal(map[string]string{
 			"chat_id":           "-1001995179603",                                                          //friends and family
@@ -43,12 +43,10 @@ func main() {
 		}
 		defer resp.Body.Close()
 		//Read the response body
-		body, err := io.ReadAll(resp.Body)
+		_, err = io.ReadAll(resp.Body)
 		if err != nil {
 			log.Fatalln(err)
 		}
-		stringbody := string(body)
-		log.Println(stringbody)
 
 	})
 	if err != nil {
