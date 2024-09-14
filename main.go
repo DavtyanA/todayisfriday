@@ -15,7 +15,7 @@ import (
 
 func main() {
 
-	token := os.Getenv("friday_bot_token")
+	token := os.Getenv("FRIDAY_BOT_TOKEN")
 	bot, err := tgbotapi.NewBotAPI(token)
 	if err != nil {
 		log.Panic(err)
