@@ -26,7 +26,7 @@ func main() {
 	c := cron.New(cron.WithLocation(time.UTC))
 
 	//18:00 MSK time, 15:00 UTC
-	_, err = c.AddFunc("* 15 * * 5", func() {
+	_, err = c.AddFunc("0 15 * * 5", func() {
 
 		postBody, _ := json.Marshal(map[string]string{
 			"chat_id":           "-1001995179603",                                                          //friends and family
