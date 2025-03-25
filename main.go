@@ -33,6 +33,7 @@ func main() {
 			"message_thread_id": "4",                                                                       //popizdet'
 			"video":             "BAACAgEAAxkDAAMKZuUAAWtF2n4zDMqIXmRBvepgQkeiAALyBAACChMoRx9v_UfIozK6NgQ", //friday.mp4
 			"file_type":         "video",
+			"caption":           "Видео прикол выходит благодаря величайшему минетцинату Олегу Ермолаеву, спасибо большое", //penis
 		})
 		responseBody := bytes.NewBuffer(postBody)
 
