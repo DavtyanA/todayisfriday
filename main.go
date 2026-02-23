@@ -32,8 +32,8 @@ func main() {
 			"chat_id":           "-1001995179603",                                                          //friends and family
 			"message_thread_id": "4",                                                                       //popizdet'
 			"video":             "BAACAgEAAxkDAAMKZuUAAWtF2n4zDMqIXmRBvepgQkeiAALyBAACChMoRx9v_UfIozK6NgQ", //friday.mp4
-			"file_type":         "video"
-			//"caption":           "Видео прикол проспонсировал Андрэ Давтян, величайший игрок на Рубике. Спасибо большое", //penis
+			"file_type":         "video",
+			//"caption":           "Здесь могла быть подпись о том, кто проспонсировал данного бота, но мои хозяева уроды", //penis
 		})
 		responseBody := bytes.NewBuffer(postBody)
 
